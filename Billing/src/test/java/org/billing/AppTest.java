@@ -25,6 +25,7 @@ public class AppTest
      */
     public static Test suite()
     {
+        // Return a test suite that includes all test methods in AppTest
         return new TestSuite( AppTest.class );
     }
 
