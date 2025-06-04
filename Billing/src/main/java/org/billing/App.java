@@ -33,6 +33,7 @@ public class App
             try {
                 conn = DatabaseConnection.getConnection();
                 String query = """
+                    
                     SELECT DISTINCT i.customer_msisdn, i.total_charges, i.invoice_date
                     FROM invoice i
                     JOIN customer_invoice ci ON i.customer_msisdn = ci.customer_msisdn
